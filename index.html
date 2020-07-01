@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FontAwesomeWeb/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="extra">
+        <img src="images/img 1.jpeg" alt="Saylani" width="450px" height="auto" class="image">
+        <h1> Saylani Online Academy </h1>
+    </div>
+    <form action="thanks.html" method="POST">
+        <table>
+            <tr>
+                <td colspan="2" class="tableCenter">
+                    <h2> Student Registration Form </h2>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="username" class="bold"> Name: </label> </td>
+                <td> <input type="text" id="username" placeholder="Name" maxlength="50" size="28" required> </td>
+            </tr>
+            <tr>
+                <td> <label for="fatherName" class="bold"> Father Name: </label> </td>
+                <td> <input type="text" id="fatherName" placeholder="Father Name" maxlength="50" size="28" required>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="password" class="bold"> Password: </label> </td>
+                <td>
+                    <input type="password" id="password" placeholder="password" maxlength="50" size="28" required>
+                    <i class="fas fa-eye-slash" onclick="show()"></i>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="address" class="bold"> Address: </label> </td>
+                <td> <textarea name="" id="address" cols="30" rows="4" placeholder="address..." required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="male" class="bold"> Gender: </label> </td>
+                <td>
+                    <label for="male" class="pointer"> Male: <input type="radio" id="male" name="gender" class="pointer"
+                            required> </label>
+                    <label for="female" class="pointer"> Female: <input type="radio" id="female" name="gender"
+                            class="pointer" required> </label>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="urdu" class="bold pointer"> Languages: </label> </td>
+                <td>
+                    <label for="urdu" class="pointer"> Urdu <input type="checkbox" id="urdu" class="pointer">
+                    </label>
+                    <label for="english" class="pointer"> English <input type="checkbox" id="english" class="pointer">
+                    </label>
+                    <label for="arabic" class="pointer"> Arabic <input type="checkbox" id="arabic" class="pointer">
+                    </label>
+                    <label for="chines" class="pointer"> Chines <input type="checkbox" id="chines" class="pointer">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="dob" class="bold"> DOB: </label> </td>
+                <td> <input type="date" name="dateOfBirth" id="dob" required> </td>
+            </tr>
+            <tr>
+                <td> <label for="email" class="bold"> Email ID: </label> </td>
+                <td> <input required type="email" name="mail" id="email" placeholder="Email ID" maxlength="50"
+                        size="28"> </td>
+            </tr>
+            <tr>
+                <td> <label for="num" class="bold"> Mobile Number: </label> </td>
+                <td> <input required type="number" id="num" placeholder="Mobile Number"> </td>
+            </tr>
+            <tr>
+                <td> <label for="city" class="bold"> City: </label> </td>
+                <td>
+                    <select name="city" id="city">
+                        <option value="select" selected> Select Your City </option>
+                        <option value="Karachi"> Karachi </option>
+                        <option value="Lahore"> Lahore </option>
+                        <option value="Islamabad"> Islamabad </option>
+                        <option value="Quetta"> Quetta </option>
+                        <option value="Peshawar"> Peshawar </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="hobby" class="bold"> Hobbies: </label> </td>
+                <td>
+                    <select name="hobby" id="hobby" multiple>
+                        <option value="Cricket"> Cricket </option>
+                        <option value="Football"> Football </option>
+                        <option value="Hokey"> Hokey </option>
+                        <option value="Tennis"> Tennis </option>
+                    </select>
+                    <span id="warn"> **Press CTRL key to select multiple choices </span>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="pic" class="bold"> Upload Picture: </label> </td>
+                <td> <input type="file" id="pic" required> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button> Submit </button> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script src="app.js"></script>
+
+</html>

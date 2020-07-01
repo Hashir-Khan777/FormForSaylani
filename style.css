@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  transition: 0.2s linear;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 20px;
+  border: none;
+  color: black;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+a:hover {
+  background-color: green;
+  color: skyblue;
+}
+
+select {
+  cursor: pointer !important;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid green;
+  background: transparent;
+  transition: 0.2s linear;
+}
+
+button:hover {
+  color: skyblue;
+  background-color: green;
+}
+
+.extra {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.3s linear;
+}
+body {
+  background-color: skyblue;
+}
+
+.tableCenter {
+  text-align: center;
+  font-weight: 500;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.3s linear;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+td {
+  padding-top: 10px;
+  padding-right: 70px;
+}
+
+.bold {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  transition: 0.3s linear;
+}
+
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  overflow: auto;
+  border-bottom: 2px solid black;
+  transition: 0.3s linear;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid darkslateblue;
+}
+
+#hobby {
+  background-color: skyblue;
+  overflow: auto;
+  padding: 6px;
+}
+
+#warn {
+  position: absolute;
+  font-size: 11px;
+}
+
+#city {
+  background-color: skyblue;
+  padding: 3px;
+  border-radius: 5px;
+  outline: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+  td {
+    display: block;
+  }
+  .image {
+    width: 300px;
+  }
+}
